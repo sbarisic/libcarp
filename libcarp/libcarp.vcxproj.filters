@@ -18,10 +18,21 @@
     <ClCompile Include="libcarp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="libcarp_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libcarp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="libcarp_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

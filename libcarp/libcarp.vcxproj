@@ -127,9 +127,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="libcarp.c" />
+    <ClCompile Include="libcarp_string.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libcarp.h" />
+    <ClInclude Include="libcarp_string.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
