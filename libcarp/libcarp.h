@@ -10,6 +10,7 @@
 // LIBCARP_CPP - Compiling as C++?
 
 #define LIBCARP_SYSCALL_API
+#define LIBCARP_API
 
 #ifdef _WIN32
 #ifdef _WIN64
@@ -69,5 +70,6 @@ typedef uint64 size_t;
 typedef uint8 byte;
 
 typedef void* voidptr;
+typedef voidptr funcptr;
 
 #define NULL ((voidptr)0)

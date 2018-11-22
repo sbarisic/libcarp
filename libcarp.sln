@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcarp", "libcarp\libcarp.vcxproj", "{9FFDFA52-5F53-472F-994C-E85FAFFFBB0F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{24B2B3C0-006C-45B6-A1FD-993A824FB4BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FFDFA52-5F53-472F-994C-E85FAFFFBB0F} = {9FFDFA52-5F53-472F-994C-E85FAFFFBB0F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

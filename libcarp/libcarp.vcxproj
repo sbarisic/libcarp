@@ -133,11 +133,14 @@
     <ClCompile Include="libcarp.c" />
     <ClCompile Include="libcarp_string.c" />
     <ClCompile Include="libcarp_syscalls.c" />
+    <ClCompile Include="libcarp_threads.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libcarp.h" />
+    <ClInclude Include="libcarp_platform_windows.h" />
     <ClInclude Include="libcarp_string.h" />
     <ClInclude Include="libcarp_syscalls.h" />
+    <ClInclude Include="libcarp_threads.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="TODO.txt" />

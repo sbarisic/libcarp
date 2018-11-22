@@ -1,10 +1,5 @@
 #include "libcarp_syscalls.h"
-
-#if defined(LIBCARP_WINDOWS_32) || defined(LIBCARP_WINDOWS_64)
-#pragma warning(push, 0)
-#include <Windows.h>
-#pragma warning(pop)
-#endif
+#include "libcarp_platform_windows.h"
 
 static size_t page_size = 0;
 
@@ -39,3 +34,5 @@ void libcarp_pages_free(voidptr mem) {
 		// TODO: Error
 	}
 }
+
+// https://github.com/blanham/PDCLib/blob/master/platform/win32/functions/_PDCLIB/_PDCLIB_allocpages.c

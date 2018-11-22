@@ -2,11 +2,33 @@
 
 #include <libcarp.h>
 #include <libcarp_syscalls.h>
+#include <libcarp_threads.h>
+
+#include <stdio.h>
+
+void A(voidptr arg) {
+	for (size_t i = 0; i < 4; i++) {
+		printf("A: Hello %i!\n", i);
+		thread_sleep(200);
+	}
+}
+
+void B(voidptr arg) {
+	for (size_t i = 0; i < 8; i++) {
+		printf("B: Hello %i!\n", i);
+		thread_sleep(94);
+	}
+}
 
 int main(int argc, const char** argv) {
-	voidptr mem = libcarp_pages_alloc(1);
+	if (thread_fork() == 0) {
+		printf("thread child.\n");
+	} else {
+		printf("THREAD PARENT!\n");
+	}
 
-	libcarp_pages_free(mem);
-
+	printf("done!");
+	while (true) {
+	}
 	return 0;
 }
