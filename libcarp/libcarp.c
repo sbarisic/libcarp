@@ -1,5 +1,3 @@
 #include "libcarp.h"
 
-void wat() {
-
-}
+#include <stddef.h>
