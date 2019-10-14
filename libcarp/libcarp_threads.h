@@ -30,5 +30,3 @@ LIBCARP_API bool thread_resume(thread* t);
 LIBCARP_API void thread_join(thread* other_thread);
 LIBCARP_API void thread_sleep(uint32 ms);
 LIBCARP_API NORETURN void thread_exit(uint32 exit_code);
-
-LIBCARP_API int32 thread_fork();
