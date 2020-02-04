@@ -95,3 +95,7 @@ void thread_join(thread* other_thread) {
 void thread_sleep(uint32 ms) {
 	Sleep((DWORD)ms);
 }
+
+void thread_yield() {
+	SwitchToThread();
+}

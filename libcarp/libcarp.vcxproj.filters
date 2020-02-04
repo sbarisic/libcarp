@@ -27,6 +27,12 @@
     <ClCompile Include="libcarp_threads.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="libcarp_fibers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcarp_basics.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libcarp.h">
@@ -42,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="libcarp_platform_windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcarp_fibers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcarp_basics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
